@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="style.css" rel="stylesheet">
+<body>
+<div class="wrapper">
+  <nav id="navbar">
+   <header id="navhead">
+            <h2>JS Documentation</h2>
+        </header>
+       <ul>
+      <li class="links"><a class="nav-link" href="#introduction">
+            Introduction
+        </a>
+    </li> 
+    <li class="links">
+        <a class="nav-link" href="#what_you_should_already_know">
+            What you should already know
+        </a>
+    </li>
+        <li class="links">
+        <a class="nav-link" href="#javascript_and_java">
+            JavaScript and Java
+        </a>
+    </li>
+        <li class="links">
+        <a class="nav-link" href="#hello_world">
+           Hello world
+        </a>
+    </li>
+        <li class="links">
+        <a class="nav-link" href="#variables">
+            Variables
+        </a>
+    </li>
+        <li class="links">
+        <a class="nav-link" href="#declaring_variables">
+            Declaring variables
+        </a>
+    </li>
+        <li class="links">
+        <a class="nav-link" href="#lorem_ipsum">
+            Lorem ipsum
+        </a>
+    </li>
+    </ul>
+
+    </nav>
+  <main id="main-doc">
+     <section class="main-section" id="introduction">
+            <header id="header1">
+                <h1> Introduction</h1>
+            </header>
+            <p class="maintext">
+                JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+            </p>
+            <p class="maintext">
+                JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+            </p>
+         <ul class="ool">
+            <li class="lis">
+                Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+            </li>
+            <li class="lis">
+                Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+            </li>
+        </ul>
+    </section>
+
+        <section class="main-section" id="what_you_should_already_know">
+            <header id="header1">
+               <h1>What you should already know</h1>
+            </header>
+            <p class="maintext">   This guide assumes you have the following basic background:</p>
+            <ul class="ool">
+                <li class="lis">
+                    A general understanding of the Internet and the World Wide Web (WWW).
+                </li>
+                <li class="lis">
+                    Good working knowledge of HyperText Markup Language (HTML).
+                </li>
+                <li class="lis">
+                    Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                </li>
+            </ul>
+        </section>
+
+            <section class="main-section" id="javascript_and_java">
+                <header id="header1">
+                    <h1>JavaScript and Java</h1>
+                </header>
+                <p class="maintext">
+                    JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                </p>
+                <p class="maintext">
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                </p>
+                <p class="maintext">
+                    JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                </p>
+            </section>
+
+                <section class="main-section" id="hello_world">
+                    <header id="header1">
+                        <h1>Hello world</h1>
+                    </header>
+                    <p class="maintext">
+                        To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                    </p>
+                    <code class="codes">
+                        function greetMe(yourName) { alert("Hello " + yourName); }
+                        greetMe("World");
+                    </code>
+                    <p class="maintext">
+                        Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+                    </p>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header id="header1">
+                <h1>Variables</h1>
+            </header>
+            <p class="maintext">
+                You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+            </p>
+            <p class="maintext">
+                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+            <p class="maintext">
+                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+            </p>
+            </section>
+       
+            <section class="main-section" id="declaring_variables">
+                <header id="header1">
+                    <h1>Declaring variables</h1>
+                </header>
+                <p class="maintext">
+                    You can declare a variable in three ways:
+                </p>
+                <p class="maintext">
+                    With the keyword var. For example,
+                </p>
+                <code class="codes">
+                    var x = 42.
+                </code>
+
+                <code class="codes">
+                    var x = 42.
+                </code>
+
+                <code class="codes">
+                    var x = 42.
+                </code>
+
+                <code class="codes">
+                    var x = 42.
+                </code>
+
+                <p class="maintext">
+                    This syntax can be used to declare both local and global variables.
+                </p>
+                <p class="maintext">
+                    By simply assigning it a value. For example,
+                </p>
+                <code class="codes">
+                    x = 42.
+                </code>
+
+                <p class="maintext">
+                    This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                </p>
+                <p class="maintext">
+                    With the keyword let. For example,
+                </p>
+                <code class="codes">
+                    let y = 13.
+                </code>
+                <p class="maintext">
+                    This syntax can be used to declare a block scope local variable. See Variable scope below.
+                </p>
+               
+        <section class="main-section" id="lorem_ipsum">
+            <header id="header1">
+                <h1>Lorem Ipsum</h1>
+            </header>
+            <p class="maintext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis magna lobortis mollis dapibus. Integer placerat justo a scelerisque laoreet. Suspendisse consequat efficitur libero in egestas. Phasellus at dignissim nisl, id luctus elit. Integer tortor magna, porta at velit vitae, aliquam auctor ipsum. Nulla aliquet eu nunc quis malesuada. Nam pellentesque egestas mi, ac viverra odio. Fusce dignissim at mi et venenatis. Suspendisse at metus gravida, imperdiet libero nec, efficitur quam. Nunc commodo eros sed condimentum ornare. Fusce blandit, neque a porttitor feugiat, dolor nulla commodo augue, a faucibus diam massa id lacus. Aenean vel nibh vitae odio convallis accumsan nec nec diam. Morbi aliquet mauris nec nunc mattis luctus. Maecenas semper aliquam imperdiet. Sed sit amet sodales nibh, nec ultrices elit.
+
+Curabitur eros quam, tempus quis tempus sit amet, sollicitudin vel arcu. Mauris eu ultrices turpis. Nam diam ipsum, finibus id gravida id, finibus vitae neque. Donec gravida posuere ipsum non volutpat. Praesent a leo sit amet lacus aliquet pharetra. Integer nec nisi at ante posuere ornare. Quisque augue nibh, vehicula sit amet consectetur eu, egestas quis nisi.
+
+Vivamus efficitur cursus consequat. Donec tempor est gravida arcu semper, vitae ultrices tellus laoreet. Nam ac lectus ante. Pellentesque suscipit, tortor ut iaculis iaculis, lorem purus tristique enim, quis ullamcorper eros augue auctor dolor. Donec est ante, porttitor at ligula sit amet, lacinia tincidunt tellus. Morbi nec laoreet dui. Vestibulum et nibh quis elit blandit pharetra non quis sem. Phasellus mollis luctus est et tincidunt. Quisque non imperdiet nibh. Proin porttitor, odio vitae tincidunt finibus, neque nunc egestas quam, sit amet malesuada arcu nulla eget eros. Nullam gravida ultrices diam congue ornare.
+
+Duis vel elit at felis fringilla condimentum sit amet in sem. Mauris ut iaculis sem, ut aliquet felis. Mauris fermentum dapibus quam, sed ullamcorper justo lobortis nec. Praesent a ligula mattis, congue purus ac, accumsan felis. Aenean porttitor est nec ligula posuere aliquam. Aenean aliquet ex aliquam est vulputate tristique. Duis metus nulla, finibus non dolor at, molestie pellentesque enim. Duis tristique dignissim felis at facilisis. Vivamus tempus tristique mauris ut iaculis. Proin vel varius sapien. Integer massa libero, auctor et dignissim vitae, tristique vel magna. Donec sed elementum ipsum. Phasellus ac dolor nunc. Vestibulum gravida ut neque quis molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis magna lobortis mollis dapibus. Integer placerat justo a scelerisque laoreet. Suspendisse consequat efficitur libero in egestas. Phasellus at dignissim nisl, id luctus elit. Integer tortor magna, porta at velit vitae, aliquam auctor ipsum. Nulla aliquet eu nunc quis malesuada. Nam pellentesque egestas mi, ac viverra odio. Fusce dignissim at mi et venenatis. Suspendisse at metus gravida, imperdiet libero nec, efficitur quam. Nunc commodo eros sed condimentum ornare. Fusce blandit, neque a porttitor feugiat, dolor nulla commodo augue, a faucibus diam massa id lacus. Aenean vel nibh vitae odio convallis accumsan nec nec diam. Morbi aliquet mauris nec nunc mattis luctus. Maecenas semper aliquam imperdiet. Sed sit amet sodales nibh, nec ultrices elit.
+
+Curabitur eros quam, tempus quis tempus sit amet, sollicitudin vel arcu. Mauris eu ultrices turpis. Nam diam ipsum, finibus id gravida id, finibus vitae neque. Donec gravida posuere ipsum non volutpat. Praesent a leo sit amet lacus aliquet pharetra. Integer nec nisi at ante posuere ornare. Quisque augue nibh, vehicula sit amet consectetur eu, egestas quis nisi.
+
+Vivamus efficitur cursus consequat. Donec tempor est gravida arcu semper, vitae ultrices tellus laoreet. Nam ac lectus ante. Pellentesque suscipit, tortor ut iaculis iaculis, lorem purus tristique enim, quis ullamcorper eros augue auctor dolor. Donec est ante, porttitor at ligula sit amet, lacinia tincidunt tellus. Morbi nec laoreet dui. Vestibulum et nibh quis elit blandit pharetra non quis sem. Phasellus mollis luctus est et tincidunt. Quisque non imperdiet nibh. Proin porttitor, odio vitae tincidunt finibus, neque nunc egestas quam, sit amet malesuada arcu nulla eget eros. Nullam gravida ultrices diam congue ornare.
+
+Duis vel elit at felis fringilla condimentum sit amet in sem. Mauris ut iaculis sem, ut aliquet felis. Mauris fermentum dapibus quam, sed ullamcorper justo lobortis nec. Praesent a ligula mattis, congue purus ac, accumsan felis. Aenean porttitor est nec ligula posuere aliquam. Aenean aliquet ex aliquam est vulputate tristique. Duis metus nulla, finibus non dolor at, molestie pellentesque enim. Duis tristique dignissim felis at facilisis. Vivamus tempus tristique mauris ut iaculis. Proin vel varius sapien. Integer massa libero, auctor et dignissim vitae, tristique vel magna. Donec sed elementum ipsum. Phasellus ac dolor nunc. Vestibulum gravida ut neque quis molestie.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis magna lobortis mollis dapibus. Integer placerat justo a scelerisque laoreet. Suspendisse consequat efficitur libero in egestas. Phasellus at dignissim nisl, id luctus elit. Integer tortor magna, porta at velit vitae, aliquam auctor ipsum. Nulla aliquet eu nunc quis malesuada. Nam pellentesque egestas mi, ac viverra odio. Fusce dignissim at mi et venenatis. Suspendisse at metus gravida, imperdiet libero nec, efficitur quam. Nunc commodo eros sed condimentum ornare. Fusce blandit, neque a porttitor feugiat, dolor nulla commodo augue, a faucibus diam massa id lacus. Aenean vel nibh vitae odio convallis accumsan nec nec diam. Morbi aliquet mauris nec nunc mattis luctus. Maecenas semper aliquam imperdiet. Sed sit amet sodales nibh, nec ultrices elit.
+
+Curabitur eros quam, tempus quis tempus sit amet, sollicitudin vel arcu. Mauris eu ultrices turpis. Nam diam ipsum, finibus id gravida id, finibus vitae neque. Donec gravida posuere ipsum non volutpat. Praesent a leo sit amet lacus aliquet pharetra. Integer nec nisi at ante posuere ornare. Quisque augue nibh, vehicula sit amet consectetur eu, egestas quis nisi.
+
+Vivamus efficitur cursus consequat. Donec tempor est gravida arcu semper, vitae ultrices tellus laoreet. Nam ac lectus ante. Pellentesque suscipit, tortor ut iaculis iaculis, lorem purus tristique enim, quis ullamcorper eros augue auctor dolor. Donec est ante, porttitor at ligula sit amet, lacinia tincidunt tellus. Morbi nec laoreet dui. Vestibulum et nibh quis elit blandit pharetra non quis sem. Phasellus mollis luctus est et tincidunt. Quisque non imperdiet nibh. Proin porttitor, odio vitae tincidunt finibus, neque nunc egestas quam, sit amet malesuada arcu nulla eget eros. Nullam gravida ultrices diam congue ornare.
+
+Duis vel elit at felis fringilla condimentum sit amet in sem. Mauris ut iaculis sem, ut aliquet felis. Mauris fermentum dapibus quam, sed ullamcorper justo lobortis nec. Praesent a ligula mattis, congue purus ac, accumsan felis. Aenean porttitor est nec ligula posuere aliquam. Aenean aliquet ex aliquam est vulputate tristique. Duis metus nulla, finibus non dolor at, molestie pellentesque enim. Duis tristique dignissim felis at facilisis. Vivamus tempus tristique mauris ut iaculis. Proin vel varius sapien. Integer massa libero, auctor et dignissim vitae, tristique vel magna. Donec sed elementum ipsum. Phasellus ac dolor nunc. Vestibulum gravida ut neque quis molestie.
+            </p>
+           
+            </section>
+    </section>
+
+
+  </main>
+  
+ <footer id="footers">
+FCC: Technical Documentation Page by Marcin Dziedziński
+</footer>
+ 
+ </div>
+  

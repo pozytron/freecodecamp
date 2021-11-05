@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+
+.wrapper {
+    display:grid;
+ 
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas:
+      "nav main"
+      "nav footer";
+  }
+
+  
+  nav {
+    background-color: lightgrey;
+    grid-area: nav;
+    position: sticky;
+    top:0;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 3%;
+  }
+
+  @media only screen and (max-width: 768px) { 
+    /* For mobile phones: */ 
+    .wrapper {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 50px;
+        grid-template-areas:
+          "nav"
+          "main"
+          "footer";
+      }
+
+      nav {
+        background-color: lightgrey;
+        grid-area: nav;
+        position: relative;
+        top:0;
+        height: auto;
+        box-sizing: border-box;
+        padding: 3%;
+      }
+
+    }
+  
+  main {
+    background-color: lightblue;
+    grid-area: main;
+    
+    
+  }
+  
+  footer {
+    background-color: lightpink;
+    grid-area:footer;
+  }
+
+  #header1 {
+      margin: 0.5em;
+      
+      
+  }
+
+ #main-doc {
+      padding: 2%;
+  }
+
+  ul {
+      padding: 0.5em 0 0 4%;
+  }
+  
+  code {
+      background-color: rgba(0, 0, 0, 0.17);
+  }
+
+  .links {
+    list-style-type: none; 
+    font-size: 20px;
+    padding: 0.2em;
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+
+  .nav-link {
+      display: block;
+      text-decoration: none;
+      color:rgb(0, 0, 0)
+      
+  }
+
+  .links a:hover {
+    background-color: rgb(197, 252, 249);
+    transition: 1.5s
+    
+  }
+
+  
