@@ -1,37 +1,110 @@
 head {
-    text-align: center;
-  }
-  
-  body {
-    font-family: 'Arial';
-    margin: 30px 30px;
-  }
-  
-  main {
-    padding: 30px;
-    background-color: #ffe6ff;
-    text-align: center;
-    margin: 50px 50px;
-    
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-  }
-  
-  
-  h3 {
-    display: block;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-   
-  
-  a {
-    color: grey;
-  }
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', serif;
+  margin: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 30px;
+  background-color: #ffe6ff;
+  text-align: center;
+  margin: 50px 50px;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+h3 {
+  display: block;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: grey;
+}
+/* pozytron */
+.tribute, .tribute *{
+  box-sizing:border-box;
+}
+.tribute{
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  /*background-color: #ffe6ff;*/
+  text-align: center;
+  margin: 50px 50px;
+  position: relative;
+  display:flex;
+  flex-direction: column;;
+  align-items: center;
+}
+.tribute__container{
+  display: flex;
+}
+.tribute--border{
+  border: 1px solid #ffe6ff;
+  border-radius:50px;
+  box-shadow: 4px 5px 19px 6px #ffe6ff;
+}
+.tribute__header{
+  align-self:flex-end;
+  position:relative;
+  z-index:1;
+}
+.tribute__title, .tribute__sub-title{
+  text-shadow: 4px 5px 19px #ffe6ff;
+  box-shadow:inset 2px -2px 20px 3px #ffe6ff;
+  padding: 0 155px 0 0;
+  margin-bottom:0;
+}
+.tribute__poster {
+  /*height: 250px;*/
+  width:30%;
+  display:inline-block;
+
+}
+.tribute__image{
+  height:100%;
+  border-radius:50px 0 0 50px;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.tribute__article{
+  width:50%;
+  text-align: justify;
+}
+.tribute__tobtod{
+  font-size:12px;
+}
+.tribute__link{
+
+}
+.tribute__credits{
+  opacity:0.5;
+  color:white;
+}
+footer{
+  position:absolute;
+  border-radius: 0 0 50px 50px;
+  bottom:0;
+  z-index:2;
+  width:100%;
+  background-color:black;
+}
